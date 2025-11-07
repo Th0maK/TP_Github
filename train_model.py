@@ -5,4 +5,5 @@ def train_model(train_X, train_y, test_X, model):
     prediction=model.predict(test_X)
     return prediction
 
+# Bonjour, je viens de modifier le fichier.
 
