@@ -1,0 +1,2 @@
+J'ai modifié le fichier preprocess_data en modifiant
+l'entraînement qui est mélangé et où je choisis la sid 42.
