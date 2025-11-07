@@ -2,6 +2,8 @@ import pandas as pd
 from sklearn import svm  
 from train_model import train_model
 from preprocess_data import preprocess_data
+from sklearn.neighbors import KNeighborsClassifier
+
 
 iris = pd.read_csv("InputData/Iris.csv") #load the dataset
 test_size = 0.3 # the attribute test_size=0.3 to use for splitting the data 
@@ -18,7 +20,7 @@ test_X= test[['SepalLengthCm','SepalWidthCm','PetalLengthCm','PetalWidthCm']]
 test_y =test.Species   
 
 
-model = svm.SVC()
+model = KNeighborsClassifier()
 prediction = train_model(train_X, train_y, test_X, model)
 
 
